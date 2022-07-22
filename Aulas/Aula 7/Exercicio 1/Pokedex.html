@@ -4,17 +4,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<meta name="exercise" content="Adicione o framework Bootstrap por CND e use o sistema de grid para deixar os pokemons responsivos">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
+	
 	<title>Pokedex</title>
+	<style>
+		.row div{
+			border: 1px solid black;
+			padding:1px;
+			height:100%;
+		}
+	</style>
 </head>
-	<section>
-		<div>
-			<div>
+	<section class="container text-center">
+		<div class="row">
+			<div class="col-4">
 				<img src="img/Chikorita.png" class="responsive-img" alt="Chikorita">
 			</div>
-			<div>
+			
+			<div class="col-4">
 				<img src="img/Cyndaquil.png" class="responsive-img" alt="Cyndaquil">
 			</div>
-			<div>
+			<div class="col-4">
 				<img src="img/Totodile.png" class="responsive-img" alt="Totodile">
 			</div>
 		</div>
@@ -23,3 +34,9 @@
 
 </body>
 </html>
+<!--quando uma coluna transborda ela vai pra proxima linha-->
+<!--cada col tem dois parametros, tamanho de tela e quantas colunas ocupa. Por padrao o tamanho eh xs. 
+	ao colocar uma regra col com um tamanho especificado, daquele em diante vale a nova regra 
+
+
+-->
